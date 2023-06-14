@@ -37,6 +37,11 @@ from: markdown+emoji
 
 ![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/macbook_onyxia.png)
 
+__<https://datalab.sspcloud.fr>__
+
+### Un ensemble de services
+
+![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/onyxia_galaxy.png)
 
 
 ## Approche pédagogique (1/2) {.smaller}
