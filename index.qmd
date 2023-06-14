@@ -42,9 +42,69 @@ __<https://datalab.sspcloud.fr>__
 
 ![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/onyxia_galaxy.png)
 
+## Onboarding
+
+- Créer un compte
+- Se connecter
+- Trouver de l'aide
+- Lancer un service de data science
+- Utiliser git
+- Utiliser le stockage objet MinIO
 
 
-## Approche pédagogique (1/2) {.smaller}
+## Créer un compte
+
+- Aller sur <https://datalab.sspcloud.fr> puis `Connexion` et `Créer un compte`
+- Utiliser une adresse mail d'un domaine autorisé
+- Si besoin, demandez-nous pour rajouter un domaine
+- Seuls les domaines institutionnels sont autorisés (universités, écoles, administrations...)  
+  _domaines gmail.com, yahoo.fr... non admis_
+
+## Se connecter
+
+- aller sur <https://datalab.sspcloud.fr>
+- cliquer sur `Connexion`
+
+
+## Trouver de l'aide
+
+Documentation : <https://docs.sspcloud.fr/>
+
+
+## Lancer un service de data science
+
+<https://docs.sspcloud.fr/onyxia-guide/premiere-utilisation>
+
+- Chaque service possède un `README`, lisez-le <i class="far fa-smile-wink"></i>
+- Chaque service est protégé par un mot de passe, copiez-le
+- Les **services** sont **éphémères**  
+  **Utilisez git** (avec github ou gitlab) pour sauvegarder vos notebooks et codes  
+  **Utilisez MinIO** pour sauvegarder vos données  
+  _sinon vous pourriez perdre votre travail_
+
+
+## Utiliser git
+
+<https://docs.sspcloud.fr/onyxia-guide/controle-de-version>
+
+- Obligatoire pour ne pas perdre de travail (notebooks et codes)
+- Indispensable pour collaborer
+- Compatible avec la forge de votre choix (GitHub, GitLab...)
+
+
+## Utiliser le stockage objet MinIO
+
+<https://docs.sspcloud.fr/onyxia-guide/stockage-de-donnees>
+
+- pour déposer ses données
+- chaque utilisateur a un bucket personnel
+- possibilité de rendre des données publiques
+- interaction avec `mc`, python (`Boto3` ou `S3Fs`) ou R (`aws.s3`)
+
+## Questions
+
+
+## Lancer un service prêt-à-l'emploi (1/2) {.smaller}
 
 - Notebook standardisé accessible en un lien cliquable 
 
