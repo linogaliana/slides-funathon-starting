@@ -38,9 +38,14 @@ from: markdown+emoji
 
 __<https://datalab.sspcloud.fr>__
 
-### Un ensemble de services
+## Un ensemble de services
 
 ![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/onyxia_galaxy.png)
+
+## La logique: des services préconfigurés
+
+- Environnement standardisé pour la reproductibilité
+- Liberté d'installer des packages
 
 ## Onboarding
 
