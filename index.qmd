@@ -25,15 +25,14 @@ css: custom.css
 from: markdown+emoji
 ---
 
-
-### Le SSP Cloud, c'est quoi ?
+## Le SSP Cloud, c'est quoi ?
 
 - des serveurs hébergés à l'Insee
 - environnement ouvert aux agents de l'Etat et à des formations en data science
 - pour découvrir et expérimenter
 - **seulement avec des données en open data**
 
-### Le SSP Cloud, c'est wahou 😍
+## Le SSP Cloud, c'est wahou 😍
 
 ![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/macbook_onyxia.png)
 
@@ -42,6 +41,7 @@ __<https://datalab.sspcloud.fr>__
 ### Un ensemble de services
 
 ![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/onyxia_galaxy.png)
+
 
 
 ## Approche pédagogique (1/2) {.smaller}
