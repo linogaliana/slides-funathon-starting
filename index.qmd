@@ -1,11 +1,11 @@
 ---
-title: Utilisation d'Onyxia pour la formation
+title: Présentation du SSP Cloud
 subtitle: |
-  **[Un exemple d'utilisation avec un cours de `Python`]{.orange}**
+  **[Et comment utiliser Git dessus]{.orange}**
 author: Lino Galiana
 slide-number: true
 footer: |
-  Présentation GT notebook
+  Funathon 2023
 # uncomment for French presentations:
 lang: fr-FR
 # for blind readers:
@@ -26,32 +26,17 @@ from: markdown+emoji
 ---
 
 
-## Contexte
+### Le SSP Cloud, c'est quoi ?
 
-<br><br>
+- des serveurs hébergés à l'Insee
+- environnement ouvert aux agents de l'Etat et à des formations en data science
+- pour découvrir et expérimenter
+- **seulement avec des données en open data**
 
-- Cours 2e année ENSAE (M1), Python pour la _data science_:
-    + Introduction pratique à la _data science_
-    + Tout sur open-data
-    + Tous les supports sur [`Github`](https://github.com/linogaliana/python-datascientist)
-    + Site web [pythonds.linogaliana.fr/](https://pythonds.linogaliana.fr/)
+### Le SSP Cloud, c'est wahou 😍
 
-## Contexte
+![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/macbook_onyxia.png)
 
-- Site web [pythonds.linogaliana.fr/](https://pythonds.linogaliana.fr/) est un bon point d'entrée mais...
-- ... _Notebook_ `Jupyter` plus pratique pour apprendre ✏️
-
-. . .
-
-- Compliqué de gérer autant d'installations que d'élèves 🤔
-
-. . .
-
-- Solution💡: mise à disposition de notebooks
-dans un environnement normalisé via un service web:
-
-    + `Colab` ? ❌
-    + `SSPCloud` / `Onyxia` ✅
 
 
 ## Approche pédagogique (1/2) {.smaller}
