@@ -115,80 +115,120 @@ _Source_: [https://ensae-reproductibilite.github.io](https://ensae-reproductibil
 Les services durent plusieurs jours mais n'ont __pas vocation à persister__
 :::
 
-
-
 ## Des services standardisés pour les gouverner tous
-
 
 ![](img/onyxia_galaxy_1.png)
 
+## Un système de stockage pérenne pour les données
+
+![](img/onyxia_galaxy_2.png)
+
+## Quand `R` ou `Python` ne suffisent plus
+
+Des technologies spéciales pour les bases de données
+
+![](img/onyxia_galaxy_3.png)
+
+## Quand `R` ou `Python` ne suffisent plus
+
+Des technologies adaptées aux données volumineuses
+
+![](img/onyxia_galaxy_4.png)
+
+
+## Bonus
+
+Les statisticiens ayant découvert le `SSPCloud`, quand ils
+doivent revenir à leur infra habituelle
+
+![](https://images.theconversation.com/files/504051/original/file-20230111-22-t4yssf.png?ixlib=rb-1.1.0&rect=22%2C2%2C873%2C530&q=45&auto=format&w=926&fit=clip)
 
 
 # Onboarding
 
-## Onboarding
+## _Checklist_
 
-- Créer un compte
-- Se connecter
-- Trouver de l'aide
-- Lancer un service de data science
-- Utiliser git
-- Utiliser le stockage objet MinIO
+- [ ] Créer un compte
+- [ ] Se connecter
+- [ ] Trouver de l'aide
+- [ ] Lancer un service de _data science_ (`R`, `Jupyter`...)
+- [ ] Utiliser `Git`
+- [ ] Utiliser le stockage objet `MinIO`
 
 
 ## Créer un compte
 
 - Aller sur <https://datalab.sspcloud.fr> puis `Connexion` et `Créer un compte`
-- Utiliser une adresse mail d'un domaine autorisé
+    + Utiliser une adresse mail d'un domaine autorisé ([@insee.fr]{.blue2}, [@..gouv.fr]{.blue2}...)
+    + Domaines [@gmail.com]{.blue2}, [@yahoo.fr]{.blue2}... non admis
+    + Seuls les domaines institutionnels sont autorisés (universités, écoles, administrations...)  
+
+. . .
+
 - Si besoin, demandez-nous pour rajouter un domaine
-- Seuls les domaines institutionnels sont autorisés (universités, écoles, administrations...)  
-  _domaines gmail.com, yahoo.fr... non admis_
+ 
 
 ## Se connecter
 
-- aller sur <https://datalab.sspcloud.fr>
-- cliquer sur `Connexion`
+- Aller sur <https://datalab.sspcloud.fr>
+- Cliquer sur `Connexion`
 
 
 ## Trouver de l'aide
 
-Documentation : <https://docs.sspcloud.fr/>
+- Documentation : <https://docs.sspcloud.fr/>
 
+. . .
+
+- Portail de la formation à mettre en ⭐️ : <https://www.sspcloud.fr/formation>
+
+. . .
+
+- Poser des questions sur les fils `Tchap`:
+    + [`SSPCloud`](https://matrix.to/#/#SSPCloudXDpAw6v:agent.finances.tchap.gouv.fr) de manière générale ;
+    + [`Insee - SSPLab - Funathon 2023`](https://matrix.to/#/#funathon2023:agent.finances.tchap.gouv.fr) pendant cet événement ;
 
 ## Lancer un service de data science
 
 <https://docs.sspcloud.fr/onyxia-guide/premiere-utilisation>
 
-- Chaque service possède un `README`, lisez-le <i class="far fa-smile-wink"></i>
-- Chaque service est protégé par un mot de passe, copiez-le
+- Chaque service possède un `README`, [__lisez-le 😉__]{.red2}
+
+. . .
+
+- Chaque service est protégé par un mot de passe, __copiez-le__
+
+. . . 
+
 - Les **services** sont **éphémères**  
-  **Utilisez git** (avec github ou gitlab) pour sauvegarder vos notebooks et codes  
-  **Utilisez MinIO** pour sauvegarder vos données  
-  _sinon vous pourriez perdre votre travail_
+    + **Utilisez `Git`** (avec `Github` ou `Gitlab`) pour sauvegarder vos notebooks et codes  
+    + **Utilisez `MinIO`** pour sauvegarder vos données
+    + __sinon vous pourriez perdre votre travail__
 
 
-## Utiliser git
+## Utiliser `Git`
 
 <https://docs.sspcloud.fr/onyxia-guide/controle-de-version>
 
 - Obligatoire pour ne pas perdre de travail (notebooks et codes)
 - Indispensable pour collaborer
-- Compatible avec la forge de votre choix (GitHub, GitLab...)
+- Compatible avec la forge de votre choix (`GitHub`, `GitLab`...)
 
 
-## Utiliser le stockage objet MinIO
+## Utiliser le stockage objet `MinIO`
 
 <https://docs.sspcloud.fr/onyxia-guide/stockage-de-donnees>
 
-- pour déposer ses données
-- chaque utilisateur a un bucket personnel
-- possibilité de rendre des données publiques
-- interaction avec `mc`, python (`Boto3` ou `S3Fs`) ou R (`aws.s3`)
+- Pour déposer ses données comme si on avait un service de fichier local
+- Chaque utilisateur a un bucket personnel
+- Possibilité de rendre des données publiques
+- Librairies `Python` (`Boto3` ou `S3Fs`) ou `R` (`aws.s3`)
 
-## Questions
+## Utiliser le stockage objet `MinIO`
 
+![](/img/config.png)
 
-## Lancer un service prêt-à-l'emploi (1/2) {.smaller}
+## Lancer un service prêt-à-l'emploi
 
 - Notebook standardisé accessible en un lien cliquable 
 
@@ -206,41 +246,6 @@ Documentation : <https://docs.sspcloud.fr/>
 
 - Disponible aussi sur un portail de formation dédié sur [sspcloud.fr/formation](https://www.sspcloud.fr/formation)
 
-. . .
-
-- Exactement même contenu que le site web (merci `Quarto`!)
-
-. . .
-
-- Acculturer par la pratique aux environnements :
-    + Une bonne partie des _packages_ utiles en début de parcours pré-installés
-    + Puis certains packages à installer par les élèves via `pip` (`conda` expliqué dans un [cours plus avancé](https://ensae-reproductibilite.github.io/website/))
-
-## Approche pédagogique (2/2) {.smaller}
-
-- Boites pour identifier les exercices
-
-- Consignes mais pas solutions apparentes
-    + Exercices guidés
-    + Affiche le `DataFrame` solution (merci `Quarto`!) mais pas le code pour l'obtenir
-    + Système d'aide et de suggestion à améliorer 
-
-
-<div class="alert alert-success" role="alert" style="color: rgba(0,0,0,.8); background-color: white; margin-top: 1em; margin-bottom: 1em; margin:1.5625emauto; padding:0 .6rem .8rem!important;overflow:hidden; page-break-inside:avoid; border-radius:.25rem; box-shadow:0 .2rem .5rem rgba(0,0,0,.05),0 0 .05rem rgba(0,0,0,.1); transition:color .25s,background-color .25s,border-color .25s ; border-right: 1px solid #dee2e6 ; border-top: 1px solid #dee2e6 ; border-bottom: 1px solid #dee2e6 ; border-left:.2rem solid #3fb618;">
-<h3 class="alert-heading"><i class="fa fa-pencil"></i> Exercice 1: Afficher des données</h3>
-
-L’objectif de cet exercice est de vous amener à afficher des informations sur les données dans un bloc de code (notebook) ou dans la console
-
-Commencer sur `df`:
-
-1.  Utiliser les méthodes adéquates pour les 10 premières valeurs, les 15 dernières et un échantillon aléatoire de 10 valeurs
-2.  Tirer 5 pourcent de l’échantillon sans remise
-3.  Ne conserver que les 10 premières lignes et tirer aléatoirement dans celles-ci pour obtenir un DataFrame de 100 données.
-4.  Faire 100 tirages à partir des 6 premières lignes avec une probabilité de 1/2 pour la première observation et une probabilité uniforme pour les autres
-5.  Faire la même chose sur `df_city`.
-
-</div>
-
 
 
 
@@ -248,5 +253,7 @@ Commencer sur `df`:
 
 ## Démonstration 🚀
 
-- https://pythonds.linogaliana.fr/pandas/
+- https://datalab.sspcloud.fr/
 - https://www.sspcloud.fr/formation
+
+## Questions
