@@ -63,16 +63,68 @@ __<https://datalab.sspcloud.fr>__
 
 # Principe de la plateforme
 
+
+## Une plateforme pour la reproductibilité et la liberté {.smaller}
+
+- Vous passez un contrat avec le `SSP Cloud` pour créer
+un `RStudio` ou `Jupyter`
+    + Celui-ci tourne sur des
+serveurs distants auxquels vous accédez via le navigateur
+
+. . .
+
+- Environnement initialement __standardisé__ :
+    + Tout le monde part du même socle minimal
+    + __Liberté__ d'installer des packages ou librairies Linux
+
+
+## Une plateforme pour les bonnes pratiques {.smaller}
+
+<details>
+<summary>
+Dans un environnement différent
+</summary>
+![](https://ensae-reproductibilite.github.io/website/workflow1.png)
+
+_Source_: [https://ensae-reproductibilite.github.io](https://ensae-reproductibilite.github.io/website/chapters/application.html)
+</details>
+
+- [__Environnements temporaires__]{.orange} donc:
+    + Stocker le [__code__]{.blue2} dans un endroit pérenne: `Github`, `Gitlab`
+    + Stocker les [__données__]{.blue2} dans un endroit pérenne: `MinIO`
+
+
+<details>
+<summary>
+Dans le cadre du _Funathon_
+</summary>
+![](/img/config.png)
+</details>
+
+<details>
+<summary>
+Pour ceux voulant aller (vraiment) plus loin
+</summary>
+![](https://ensae-reproductibilite.github.io/website/workflow2.png)
+
+_Source_: [https://ensae-reproductibilite.github.io](https://ensae-reproductibilite.github.io/website/chapters/application.html)
+</details>
+
+
+::: {.callout-note}
+Les services durent plusieurs jours mais n'ont __pas vocation à persister__
+:::
+
+
+
 ## Des services standardisés pour les gouverner tous
 
 
+![](img/onyxia_galaxy_1.png)
 
 
 
-## La logique: des services préconfigurés
-
-- Environnement standardisé pour la reproductibilité
-- Liberté d'installer des packages
+# Onboarding
 
 ## Onboarding
 
