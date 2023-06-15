@@ -172,7 +172,7 @@
     "href": "light.html#aide-mémoire-s3",
     "title": "Présentation du SSP Cloud",
     "section": "Aide-mémoire S3",
-    "text": "Aide-mémoire S3\n\n\nExemples issus d’utilitR\n\n\nbucket &lt;- \"donnees-insee\"\naws.s3::get_bucket(bucket, region = \"\")\ndf &lt;- \n  aws.s3::s3read_using(\n    FUN = data.table::fread,\n    # Mettre les options de FUN ici\n    object = \"diffusion/FILOSOFI/2016/FILOSOFI_COM.csv\",\n    bucket = \"donnees-insee\",\n    opts = list(\"region\" = \"\")\n  )\naws.s3::s3write_using(\n  df,\n  FUN = data.table::fwrite,\n  # Les options de fread sont ici\n  sep = \" ;\",\n  col.names = TRUE,\n  object = \"data/filosofi2016_example.csv\",\n  bucket = \"MON_BUCKET_A_REMPLACER\",\n  opts = list(\"region\" = \"\")\n)\n\n\nExemples additionnels liés au Funathon\n\n\nbucket &lt;- \"donnees-funathon\"\naws.s3::get_bucket(bucket, region = \"\", prefix = \"2023/sujet2/diffusion\")"
+    "text": "Aide-mémoire S3\n\n\nExemples issus d’utilitR\n\nbucket &lt;- \"donnees-insee\"\naws.s3::get_bucket(bucket, region = \"\")\ndf &lt;- \n  aws.s3::s3read_using(\n    FUN = data.table::fread,\n    # Mettre les options de FUN ici\n    object = \"diffusion/FILOSOFI/2016/FILOSOFI_COM.csv\",\n    bucket = \"donnees-insee\",\n    opts = list(\"region\" = \"\")\n  )\naws.s3::s3write_using(\n  df,\n  FUN = data.table::fwrite,\n  # Les options de fread sont ici\n  sep = \" ;\",\n  col.names = TRUE,\n  object = \"data/filosofi2016_example.csv\",\n  bucket = \"MON_BUCKET_A_REMPLACER\",\n  opts = list(\"region\" = \"\")\n)\n\n\n\nExemples additionnels liés au Funathon\n\nbucket &lt;- \"donnees-funathon\"\naws.s3::get_bucket(bucket, region = \"\", prefix = \"2023/sujet2/diffusion\")"
   },
   {
     "objectID": "light.html#démonstration-1",

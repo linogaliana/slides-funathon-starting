@@ -738,7 +738,7 @@ Pour ceux voulant aller (vraiment) plus loin
 <h1>Illustration par la pratique avec <code>RStudio</code> 🚀</h1>
 
 </section>
-<section id="objectif" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="objectif" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Objectif</h2>
 <ul>
 <li>Découvrir <code>S3</code></li>
@@ -769,16 +769,14 @@ Pour ceux voulant aller (vraiment) plus loin
 </section>
 <section id="démonstration" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Démonstration 🚀</h2>
-<p>Exemple à partir du <a href="https://github.com/InseeFrLab/funathon2023_sujet2">sujet 2</a></p>
-
-<img data-src="https://img.shields.io/badge/Launch-Datalab-orange?logo=R.png" class="r-stretch quarto-figure-center"></section>
+<p>Exemple à partir du <a href="https://github.com/InseeFrLab/funathon2023_sujet2">sujet 2</a> <a href="https://datalab.sspcloud.fr/launcher/ide/rstudio?autoLaunch=false&amp;onyxia.friendlyName=%C2%ABSujet%202%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Ffunathon2023_sujet2%2Fmain%2Finit.sh%C2%BB"><img data-src="https://img.shields.io/badge/Launch-Datalab-orange?logo=R.png"></a></p>
+</section>
 <section id="aide-mémoire-s3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Aide-mémoire <code>S3</code></h2>
 <details>
 <summary>
 Exemples issus d’<a href="https://www.book.utilitr.org/01_r_insee/fiche_utiliser_rstudio_sspcloud#liens-utiles">utilitR</a>
 </summary>
-</details>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>bucket <span class="ot">&lt;-</span> <span class="st">"donnees-insee"</span></span>
 <span id="cb1-2"><a href="#cb1-2"></a>aws.s3<span class="sc">::</span><span class="fu">get_bucket</span>(bucket, <span class="at">region =</span> <span class="st">""</span>)</span>
 <span id="cb1-3"><a href="#cb1-3"></a>df <span class="ot">&lt;-</span> </span>
@@ -799,13 +797,14 @@ Exemples issus d’<a href="https://www.book.utilitr.org/01_r_insee/fiche_utilis
 <span id="cb1-18"><a href="#cb1-18"></a>  <span class="at">bucket =</span> <span class="st">"MON_BUCKET_A_REMPLACER"</span>,</span>
 <span id="cb1-19"><a href="#cb1-19"></a>  <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
 <span id="cb1-20"><a href="#cb1-20"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <details>
 <summary>
 Exemples additionnels liés au Funathon
 </summary>
-</details>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>bucket <span class="ot">&lt;-</span> <span class="st">"donnees-funathon"</span></span>
 <span id="cb2-2"><a href="#cb2-2"></a>aws.s3<span class="sc">::</span><span class="fu">get_bucket</span>(bucket, <span class="at">region =</span> <span class="st">""</span>, <span class="at">prefix =</span> <span class="st">"2023/sujet2/diffusion"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </section></section>
 <section>
 <section id="illustration-par-la-pratique-avec-jupyter" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
@@ -814,9 +813,8 @@ Exemples additionnels liés au Funathon
 </section>
 <section id="démonstration-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Démonstration 🚀</h2>
-<p>Exemple à partir du <a href="https://github.com/InseeFrLab/funathon2023_sujet4">sujet 4</a></p>
-
-<img data-src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python.png" class="r-stretch quarto-figure-center"></section>
+<p>Exemple à partir du <a href="https://github.com/InseeFrLab/funathon2023_sujet4">sujet 4</a> <a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&amp;kubernetes.role=%C2%ABadmin%C2%BB&amp;networking.user.enabled=true&amp;git.cache=%C2%AB36000%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Ffunathon2023_sujet4%2Fmain%2Finit.sh%C2%BB"><img data-src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python.png"></a></p>
+</section>
 <section id="aide-mémoire-s3-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Aide-mémoire <code>S3</code></h2>
 <p>Voir <a href="https://pythonds.linogaliana.fr/reads3/" class="uri">https://pythonds.linogaliana.fr/reads3/</a></p>
