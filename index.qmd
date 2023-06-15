@@ -25,22 +25,49 @@ css: custom.css
 from: markdown+emoji
 ---
 
-## Le SSP Cloud, c'est quoi ?
+# Le SSP Cloud, c'est quoi ?
 
-- des serveurs hébergés à l'Insee
-- environnement ouvert aux agents de l'Etat et à des formations en data science
-- pour découvrir et expérimenter
-- **seulement avec des données en open data**
 
-## Le SSP Cloud, c'est wahou 😍
+## Un environnement idéal pour la formation {.smaller}
+
+- Plateforme disponible depuis <https://datalab.sspcloud.fr/>
+    + Pour découvrir et expérimenter... 
+    + ... **Seulement avec des données en open data**
+
+. . .
+
+- Une plateforme pour l'administration :
+    + Ouverte aux agents de l'Etat et à des formations en _data science_ (ENSAE...)
+    + Des serveurs hébergés à l'Insee
+
+. . .
+
+::: {.callout-important}
+
+__Plateforme recommandée pour cet événement__
+
+- Signalez-nous si vous ne pouvez créer de compte !
+
+:::
+
+## Un environnement idéal pour l'analyse de données
+
+![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/onyxia_galaxy.png){width=80%}
+
+## En plus, le SSP Cloud, c'est wahou ! 😍
 
 ![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/macbook_onyxia.png)
 
 __<https://datalab.sspcloud.fr>__
 
-## Un ensemble de services
 
-![](https://git.lab.sspcloud.fr/diit/presentation/energy-data-hack-2022/20220523-day_1-onyxia_onboarding/-/raw/main/slideshow/onyxia_galaxy.png)
+# Principe de la plateforme
+
+## Des services standardisés pour les gouverner tous
+
+
+
+
 
 ## La logique: des services préconfigurés
 
