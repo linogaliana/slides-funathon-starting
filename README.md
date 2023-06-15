@@ -1,3 +1,3 @@
 # Slides
 
-https://linogaliana.github.io/slides-gt-notebook/
+https://linogaliana.github.io/slides-funathon-starting/light.html
