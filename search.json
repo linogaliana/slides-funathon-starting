@@ -42,80 +42,108 @@
     "text": "Des services standardisés pour les gouverner tous"
   },
   {
-    "objectID": "light.html#onboarding-1",
-    "href": "light.html#onboarding-1",
+    "objectID": "light.html#un-système-de-stockage-pérenne-pour-les-données",
+    "href": "light.html#un-système-de-stockage-pérenne-pour-les-données",
     "title": "Présentation du SSP Cloud",
-    "section": "Onboarding",
-    "text": "Onboarding\n\nCréer un compte\nSe connecter\nTrouver de l’aide\nLancer un service de data science\nUtiliser git\nUtiliser le stockage objet MinIO"
+    "section": "Un système de stockage pérenne pour les données",
+    "text": "Un système de stockage pérenne pour les données"
+  },
+  {
+    "objectID": "light.html#quand-r-ou-python-ne-suffisent-plus",
+    "href": "light.html#quand-r-ou-python-ne-suffisent-plus",
+    "title": "Présentation du SSP Cloud",
+    "section": "Quand R ou Python ne suffisent plus",
+    "text": "Quand R ou Python ne suffisent plus\nDes technologies spéciales pour les bases de données"
+  },
+  {
+    "objectID": "light.html#quand-r-ou-python-ne-suffisent-plus-1",
+    "href": "light.html#quand-r-ou-python-ne-suffisent-plus-1",
+    "title": "Présentation du SSP Cloud",
+    "section": "Quand R ou Python ne suffisent plus",
+    "text": "Quand R ou Python ne suffisent plus\nDes technologies adaptées aux données volumineuses"
+  },
+  {
+    "objectID": "light.html#bonus",
+    "href": "light.html#bonus",
+    "title": "Présentation du SSP Cloud",
+    "section": "Bonus",
+    "text": "Bonus\nLes statisticiens ayant découvert le SSPCloud, quand ils doivent revenir à leur infra habituelle"
+  },
+  {
+    "objectID": "light.html#checklist",
+    "href": "light.html#checklist",
+    "title": "Présentation du SSP Cloud",
+    "section": "Checklist",
+    "text": "Checklist\n\nCréer un compte\nSe connecter\nTrouver de l’aide\nLancer un service de data science (R, Jupyter…)\nUtiliser Git\nUtiliser le stockage objet MinIO"
   },
   {
     "objectID": "light.html#créer-un-compte",
     "href": "light.html#créer-un-compte",
     "title": "Présentation du SSP Cloud",
     "section": "Créer un compte",
-    "text": "Créer un compte\n\nAller sur https://datalab.sspcloud.fr puis Connexion et Créer un compte\nUtiliser une adresse mail d’un domaine autorisé\nSi besoin, demandez-nous pour rajouter un domaine\nSeuls les domaines institutionnels sont autorisés (universités, écoles, administrations…)\ndomaines gmail.com, yahoo.fr… non admis"
+    "text": "Créer un compte\n\nAller sur https://datalab.sspcloud.fr puis Connexion et Créer un compte\n\nUtiliser une adresse mail d’un domaine autorisé (@insee.fr, @..gouv.fr…)\nDomaines @gmail.com, @yahoo.fr… non admis\nSeuls les domaines institutionnels sont autorisés (universités, écoles, administrations…)\n\n\n\n\nSi besoin, demandez-nous pour rajouter un domaine"
   },
   {
     "objectID": "light.html#se-connecter",
     "href": "light.html#se-connecter",
     "title": "Présentation du SSP Cloud",
     "section": "Se connecter",
-    "text": "Se connecter\n\naller sur https://datalab.sspcloud.fr\ncliquer sur Connexion"
+    "text": "Se connecter\n\nAller sur https://datalab.sspcloud.fr\nCliquer sur Connexion"
   },
   {
     "objectID": "light.html#trouver-de-laide",
     "href": "light.html#trouver-de-laide",
     "title": "Présentation du SSP Cloud",
     "section": "Trouver de l’aide",
-    "text": "Trouver de l’aide\nDocumentation : https://docs.sspcloud.fr/"
+    "text": "Trouver de l’aide\n\nDocumentation : https://docs.sspcloud.fr/\n\n\n\nPortail de la formation à mettre en ⭐️ : https://www.sspcloud.fr/formation\n\n\n\n\nPoser des questions sur les fils Tchap:\n\nSSPCloud de manière générale ;\nInsee - SSPLab - Funathon 2023 pendant cet événement ;"
   },
   {
     "objectID": "light.html#lancer-un-service-de-data-science",
     "href": "light.html#lancer-un-service-de-data-science",
     "title": "Présentation du SSP Cloud",
     "section": "Lancer un service de data science",
-    "text": "Lancer un service de data science\nhttps://docs.sspcloud.fr/onyxia-guide/premiere-utilisation\n\nChaque service possède un README, lisez-le \nChaque service est protégé par un mot de passe, copiez-le\nLes services sont éphémères\nUtilisez git (avec github ou gitlab) pour sauvegarder vos notebooks et codes\nUtilisez MinIO pour sauvegarder vos données\nsinon vous pourriez perdre votre travail"
+    "text": "Lancer un service de data science\nhttps://docs.sspcloud.fr/onyxia-guide/premiere-utilisation\n\nChaque service possède un README, lisez-le 😉\n\n\n\nChaque service est protégé par un mot de passe, copiez-le\n\n\n\n\nLes services sont éphémères\n\nUtilisez Git (avec Github ou Gitlab) pour sauvegarder vos notebooks et codes\n\nUtilisez MinIO pour sauvegarder vos données\nsinon vous pourriez perdre votre travail"
   },
   {
     "objectID": "light.html#utiliser-git",
     "href": "light.html#utiliser-git",
     "title": "Présentation du SSP Cloud",
-    "section": "Utiliser git",
-    "text": "Utiliser git\nhttps://docs.sspcloud.fr/onyxia-guide/controle-de-version\n\nObligatoire pour ne pas perdre de travail (notebooks et codes)\nIndispensable pour collaborer\nCompatible avec la forge de votre choix (GitHub, GitLab…)"
+    "section": "Utiliser Git",
+    "text": "Utiliser Git\nhttps://docs.sspcloud.fr/onyxia-guide/controle-de-version\n\nObligatoire pour ne pas perdre de travail (notebooks et codes)\nIndispensable pour collaborer\nCompatible avec la forge de votre choix (GitHub, GitLab…)"
   },
   {
     "objectID": "light.html#utiliser-le-stockage-objet-minio",
     "href": "light.html#utiliser-le-stockage-objet-minio",
     "title": "Présentation du SSP Cloud",
     "section": "Utiliser le stockage objet MinIO",
-    "text": "Utiliser le stockage objet MinIO\nhttps://docs.sspcloud.fr/onyxia-guide/stockage-de-donnees\n\npour déposer ses données\nchaque utilisateur a un bucket personnel\npossibilité de rendre des données publiques\ninteraction avec mc, python (Boto3 ou S3Fs) ou R (aws.s3)"
+    "text": "Utiliser le stockage objet MinIO\nhttps://docs.sspcloud.fr/onyxia-guide/stockage-de-donnees\n\nPour déposer ses données comme si on avait un service de fichier local\nChaque utilisateur a un bucket personnel\nPossibilité de rendre des données publiques\nLibrairies Python (Boto3 ou S3Fs) ou R (aws.s3)"
   },
   {
-    "objectID": "light.html#questions",
-    "href": "light.html#questions",
+    "objectID": "light.html#utiliser-le-stockage-objet-minio-1",
+    "href": "light.html#utiliser-le-stockage-objet-minio-1",
     "title": "Présentation du SSP Cloud",
-    "section": "Questions",
-    "text": "Questions"
+    "section": "Utiliser le stockage objet MinIO",
+    "text": "Utiliser le stockage objet MinIO"
   },
   {
-    "objectID": "light.html#lancer-un-service-prêt-à-lemploi-12",
-    "href": "light.html#lancer-un-service-prêt-à-lemploi-12",
+    "objectID": "light.html#lancer-un-service-prêt-à-lemploi",
+    "href": "light.html#lancer-un-service-prêt-à-lemploi",
     "title": "Présentation du SSP Cloud",
-    "section": "Lancer un service prêt-à-l’emploi (1/2)",
-    "text": "Lancer un service prêt-à-l’emploi (1/2)\n\nNotebook standardisé accessible en un lien cliquable\n\n\n      \n\n\n\nDisponible aussi sur un portail de formation dédié sur sspcloud.fr/formation\n\n\n\n\nExactement même contenu que le site web (merci Quarto!)\n\n\n\n\nAcculturer par la pratique aux environnements :\n\nUne bonne partie des packages utiles en début de parcours pré-installés\nPuis certains packages à installer par les élèves via pip (conda expliqué dans un cours plus avancé)"
-  },
-  {
-    "objectID": "light.html#approche-pédagogique-22",
-    "href": "light.html#approche-pédagogique-22",
-    "title": "Présentation du SSP Cloud",
-    "section": "Approche pédagogique (2/2)",
-    "text": "Approche pédagogique (2/2)\n\nBoites pour identifier les exercices\nConsignes mais pas solutions apparentes\n\nExercices guidés\nAffiche le DataFrame solution (merci Quarto!) mais pas le code pour l’obtenir\nSystème d’aide et de suggestion à améliorer\n\n\n\n\n Exercice 1: Afficher des données\n\nL’objectif de cet exercice est de vous amener à afficher des informations sur les données dans un bloc de code (notebook) ou dans la console\nCommencer sur df:\n\nUtiliser les méthodes adéquates pour les 10 premières valeurs, les 15 dernières et un échantillon aléatoire de 10 valeurs\nTirer 5 pourcent de l’échantillon sans remise\nNe conserver que les 10 premières lignes et tirer aléatoirement dans celles-ci pour obtenir un DataFrame de 100 données.\nFaire 100 tirages à partir des 6 premières lignes avec une probabilité de 1/2 pour la première observation et une probabilité uniforme pour les autres\nFaire la même chose sur df_city."
+    "section": "Lancer un service prêt-à-l’emploi",
+    "text": "Lancer un service prêt-à-l’emploi\n\nNotebook standardisé accessible en un lien cliquable\n\n\n      \n\n\n\nDisponible aussi sur un portail de formation dédié sur sspcloud.fr/formation"
   },
   {
     "objectID": "light.html#démonstration-1",
     "href": "light.html#démonstration-1",
     "title": "Présentation du SSP Cloud",
     "section": "Démonstration 🚀",
-    "text": "Démonstration 🚀\n\nhttps://pythonds.linogaliana.fr/pandas/\nhttps://www.sspcloud.fr/formation\n\n\n\nFunathon 2023"
+    "text": "Démonstration 🚀\n\nhttps://datalab.sspcloud.fr/\nhttps://www.sspcloud.fr/formation"
+  },
+  {
+    "objectID": "light.html#questions",
+    "href": "light.html#questions",
+    "title": "Présentation du SSP Cloud",
+    "section": "Questions",
+    "text": "Questions\n\n\nFunathon 2023"
   }
 ]
