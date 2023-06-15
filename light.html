@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="site_libs/quarto-contrib/quarto-project/InseeFrLab/onyxia/logo.css">
@@ -586,32 +651,179 @@ Pour ceux voulant aller (vraiment) plus loin
 <section id="utiliser-le-stockage-objet-minio-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Utiliser le stockage objet <code>MinIO</code></h2>
 
-<img data-src="./img/config.png" class="r-stretch"></section>
+<img data-src="./img/minio1.png" class="r-stretch"></section>
 <section id="lancer-un-service-prêt-à-lemploi" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Lancer un service prêt-à-l’emploi</h2>
 <ul>
-<li>Notebook standardisé accessible en un lien cliquable</li>
+<li>Un exemple avec <code>R</code> (<a href="https://github.com/InseeFrLab/funathon2023_sujet2">Explorer la géographie des cultures agricoles françaises</a>)</li>
 </ul>
-<p class="badges">
-<a href="https://github.com/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" class="github"><i class="fab fa-github"></i></a> <a href="https://downgit.github.io/#/home?url=https://github.com/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Download-Notebook-important?logo=Jupyter" alt="Download"></a> <a href="https://nbviewer.jupyter.org/github/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Visualize-nbviewer-blue?logo=Jupyter" alt="nbviewer"></a> <a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&amp;onyxia.friendlyName=%C2%ABpython-datascience%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Flinogaliana%2Fpython-datascientist%2Fmaster%2Fsspcloud%2Finit-jupyter.sh%C2%BB&amp;init.personalInitArgs=%C2%ABmanipulation%2002a_pandas_tutorial%C2%BB&amp;security.allowlist.enabled=false" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a><br> <a href="https://mybinder.org/v2/gh/linogaliana/python-datascientist/master?filepath={binder_path}" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Launch-Binder-E66581.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFkAAABZCAMAAABi1XidAAAB8lBMVEX///9XmsrmZYH1olJXmsr1olJXmsrmZYH1olJXmsr1olJXmsrmZYH1olL1olJXmsr1olJXmsrmZYH1olL1olJXmsrmZYH1olJXmsr1olL1olJXmsrmZYH1olL1olJXmsrmZYH1olL1olL0nFf1olJXmsrmZYH1olJXmsq8dZb1olJXmsrmZYH1olJXmspXmspXmsr1olL1olJXmsrmZYH1olJXmsr1olL1olJXmsrmZYH1olL1olLeaIVXmsrmZYH1olL1olL1olJXmsrmZYH1olLna31Xmsr1olJXmsr1olJXmsrmZYH1olLqoVr1olJXmsr1olJXmsrmZYH1olL1olKkfaPobXvviGabgadXmsqThKuofKHmZ4Dobnr1olJXmsr1olJXmspXmsr1olJXmsrfZ4TuhWn1olL1olJXmsqBi7X1olJXmspZmslbmMhbmsdemsVfl8ZgmsNim8Jpk8F0m7R4m7F5nLB6jbh7jbiDirOEibOGnKaMhq+PnaCVg6qWg6qegKaff6WhnpKofKGtnomxeZy3noG6dZi+n3vCcpPDcpPGn3bLb4/Mb47UbIrVa4rYoGjdaIbeaIXhoWHmZYHobXvpcHjqdHXreHLroVrsfG/uhGnuh2bwj2Hxk17yl1vzmljzm1j0nlX1olL3AJXWAAAAbXRSTlMAEBAQHx8gICAuLjAwMDw9PUBAQEpQUFBXV1hgYGBkcHBwcXl8gICAgoiIkJCQlJicnJ2goKCmqK+wsLC4usDAwMjP0NDQ1NbW3Nzg4ODi5+3v8PDw8/T09PX29vb39/f5+fr7+/z8/Pz9/v7+zczCxgAABC5JREFUeAHN1ul3k0UUBvCb1CTVpmpaitAGSLSpSuKCLWpbTKNJFGlcSMAFF63iUmRccNG6gLbuxkXU66JAUef/9LSpmXnyLr3T5AO/rzl5zj137p136BISy44fKJXuGN/d19PUfYeO67Znqtf2KH33Id1psXoFdW30sPZ1sMvs2D060AHqws4FHeJojLZqnw53cmfvg+XR8mC0OEjuxrXEkX5ydeVJLVIlV0e10PXk5k7dYeHu7Cj1j+49uKg7uLU61tGLw1lq27ugQYlclHC4bgv7VQ+TAyj5Zc/UjsPvs1sd5cWryWObtvWT2EPa4rtnWW3JkpjggEpbOsPr7F7EyNewtpBIslA7p43HCsnwooXTEc3UmPmCNn5lrqTJxy6nRmcavGZVt/3Da2pD5NHvsOHJCrdc1G2r3DITpU7yic7w/7Rxnjc0kt5GC4djiv2Sz3Fb2iEZg41/ddsFDoyuYrIkmFehz0HR2thPgQqMyQYb2OtB0WxsZ3BeG3+wpRb1vzl2UYBog8FfGhttFKjtAclnZYrRo9ryG9uG/FZQU4AEg8ZE9LjGMzTmqKXPLnlWVnIlQQTvxJf8ip7VgjZjyVPrjw1te5otM7RmP7xm+sK2Gv9I8Gi++BRbEkR9EBw8zRUcKxwp73xkaLiqQb+kGduJTNHG72zcW9LoJgqQxpP3/Tj//c3yB0tqzaml05/+orHLksVO+95kX7/7qgJvnjlrfr2Ggsyx0eoy9uPzN5SPd86aXggOsEKW2Prz7du3VID3/tzs/sSRs2w7ovVHKtjrX2pd7ZMlTxAYfBAL9jiDwfLkq55Tm7ifhMlTGPyCAs7RFRhn47JnlcB9RM5T97ASuZXIcVNuUDIndpDbdsfrqsOppeXl5Y+XVKdjFCTh+zGaVuj0d9zy05PPK3QzBamxdwtTCrzyg/2Rvf2EstUjordGwa/kx9mSJLr8mLLtCW8HHGJc2R5hS219IiF6PnTusOqcMl57gm0Z8kanKMAQg0qSyuZfn7zItsbGyO9QlnxY0eCuD1XL2ys/MsrQhltE7Ug0uFOzufJFE2PxBo/YAx8XPPdDwWN0MrDRYIZF0mSMKCNHgaIVFoBbNoLJ7tEQDKxGF0kcLQimojCZopv0OkNOyWCCg9XMVAi7ARJzQdM2QUh0gmBozjc3Skg6dSBRqDGYSUOu66Zg+I2fNZs/M3/f/Grl/XnyF1Gw3VKCez0PN5IUfFLqvgUN4C0qNqYs5YhPL+aVZYDE4IpUk57oSFnJm4FyCqqOE0jhY2SMyLFoo56zyo6becOS5UVDdj7Vih0zp+tcMhwRpBeLyqtIjlJKAIZSbI8SGSF3k0pA3mR5tHuwPFoa7N7reoq2bqCsAk1HqCu5uvI1n6JuRXI+S1Mco54YmYTwcn6Aeic+kssXi8XpXC4V3t7/ADuTNKaQJdScAAAAAElFTkSuQmCC" alt="Binder"></a> <a href="http://colab.research.google.com/github/linogaliana/python-datascientist/blob/master/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://github.dev/linogaliana/python-datascientist/notebooks/course/manipulation/02a_pandas_tutorial.ipynb" target="_blank" rel="noopener"><img src="https://img.shields.io/static/v1?logo=visualstudiocode&amp;label=&amp;message=Open%20in%20Visual%20Studio%20Code&amp;labelColor=2c2c32&amp;color=007acc&amp;logoColor=007acc" alt="githubdev"></a>
-</p>
-<div class="fragment">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://datalab.sspcloud.fr/launcher/ide/rstudio?autoLaunch=false&amp;onyxia.friendlyName=%C2%ABSujet%202%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Ffunathon2023_sujet2%2Fmain%2Finit.sh%C2%BB"><img data-src="https://img.shields.io/badge/Launch-Datalab-orange?logo=R.png"></a></p>
+</figure>
+</div>
 <ul>
-<li>Disponible aussi sur un portail de formation dédié sur <a href="https://www.sspcloud.fr/formation">sspcloud.fr/formation</a></li>
+<li>Un exemple avec <code>Python</code> (<a href="https://github.com/InseeFrLab/funathon2023_sujet4">Mon <code>Yuka</code> avec <code>Python</code></a>)</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&amp;kubernetes.role=%C2%ABadmin%C2%BB&amp;networking.user.enabled=true&amp;git.cache=%C2%AB36000%C2%BB&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Ffunathon2023_sujet4%2Fmain%2Finit.sh%C2%BB"><img data-src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python.png"></a></p>
+</figure>
 </div>
 </section></section>
 <section>
-<section id="démonstration" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Démonstration 🚀</h1>
+<section id="git-quelques-concepts" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1><code>Git</code>: quelques concepts</h1>
+
+</section>
+<section id="pourquoi-faire-du-contrôle-de-version" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Pourquoi faire du contrôle de version ?</h2>
+<ul>
+<li><span class="blue2"><strong>Construire</strong></span> et <span class="blue2"><strong>naviguer</strong></span> à travers l’<span class="orange"><strong>historique</strong></span> de son projet</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>La <span class="orange"><strong>collaboration</strong></span> rendue <span class="blue2"><strong>simple</strong></span> et <span class="blue2"><strong>efficace</strong></span></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Améliorer la <span class="orange"><strong>reproductibilité</strong></span> de ses projets</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Améliorer la <span class="orange"><strong>visibilité</strong></span> de ses projets</li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Plus d’éléments dans la <a href="https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/">formation officielle</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="gymnastique" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Gymnastique</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/slides/img/localremote.png" height="400"></p>
+</figure>
+</div>
+<ul>
+<li>Par défaut, le dépôt distant porte l’alias <code>origin</code></li>
+</ul>
+</section>
+<section id="ressources-supplémentaires" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Ressources supplémentaires</h2>
+<ul>
+<li>Pour <strong>aller plus loin</strong>:
+<ul>
+<li><a href="https://inseefrlab.github.io/formation-bonnes-pratiques-git-R">Formation aux bonnes pratiques avec <code>Git</code> et <code>R</code></a></li>
+<li><a href="https://pythonds.linogaliana.fr/exogit/">Introduction à <code>Git</code> pour <code>Python</code></a></li>
+<li>La <a href="https://www.book.utilitr.org/">documentation <code>utilitR</code></a> propose plusieurs chapitres sur <code>Git</code></li>
+<li>La <a href="https://git-scm.com/book/en/v2">Bible</a> de l’usage de <code>Git</code></li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="illustration-par-la-pratique-avec-rstudio" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Illustration par la pratique avec <code>RStudio</code> 🚀</h1>
+
+</section>
+<section id="objectif" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Objectif</h2>
+<ul>
+<li>Découvrir <code>S3</code></li>
+<li>Découvrir <code>Git</code> à travers l’interface <code>RStudio</code></li>
+<li>Découvrir l’interaction entre <code>Git</code>, <code>RStudio</code> et <code>Gitlab</code></li>
+<li>Se familiariser avec quelques concepts de <code>Git</code></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong><span class="blue2">Méthode préconisée pour <code>Git</code></span></strong>:
+<ul>
+<li>On propose de travailler sur la même branche…</li>
+<li>… mais des fichiers séparés.</li>
+<li>Evite l’utilisation de branches tout en limitant les conflits.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong>Trouver de l’aide</strong>:
+<ul>
+<li>Pour toute question : le salon Tchap <a href="https://tchap.gouv.fr/#/room/#InseeGitGitlablPtu8f1Frns:agent.finances.tchap.gouv.fr">Insee-Git-Gitlab</a></li>
+<li>A l’Insee : la <a href="https://gitlab.insee.fr/infrastructure/lss/ausv3/documentation-utilisateurs/-/wikis/Logiciels/Git">documentation utilisateurs</a> pour l’utilisation de <code>Git</code> sur <code>AUS</code></li>
+<li>Sollicitez vos collègues utilisateurs de <code>Git</code> !</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="démonstration" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Démonstration 🚀</h2>
+<p>Exemple à partir du <a href="https://github.com/InseeFrLab/funathon2023_sujet2">sujet 2</a></p>
+
+<img data-src="https://img.shields.io/badge/Launch-Datalab-orange?logo=R.png" class="r-stretch quarto-figure-center"></section>
+<section id="aide-mémoire-s3" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Aide-mémoire <code>S3</code></h2>
+<details>
+<summary>
+Exemples issus d’<a href="https://www.book.utilitr.org/01_r_insee/fiche_utiliser_rstudio_sspcloud#liens-utiles">utilitR</a>
+</summary>
+</details>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>bucket <span class="ot">&lt;-</span> <span class="st">"donnees-insee"</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>aws.s3<span class="sc">::</span><span class="fu">get_bucket</span>(bucket, <span class="at">region =</span> <span class="st">""</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a>df <span class="ot">&lt;-</span> </span>
+<span id="cb1-4"><a href="#cb1-4"></a>  aws.s3<span class="sc">::</span><span class="fu">s3read_using</span>(</span>
+<span id="cb1-5"><a href="#cb1-5"></a>    <span class="at">FUN =</span> data.table<span class="sc">::</span>fread,</span>
+<span id="cb1-6"><a href="#cb1-6"></a>    <span class="co"># Mettre les options de FUN ici</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>    <span class="at">object =</span> <span class="st">"diffusion/FILOSOFI/2016/FILOSOFI_COM.csv"</span>,</span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="at">bucket =</span> <span class="st">"donnees-insee"</span>,</span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
+<span id="cb1-10"><a href="#cb1-10"></a>  )</span>
+<span id="cb1-11"><a href="#cb1-11"></a>aws.s3<span class="sc">::</span><span class="fu">s3write_using</span>(</span>
+<span id="cb1-12"><a href="#cb1-12"></a>  df,</span>
+<span id="cb1-13"><a href="#cb1-13"></a>  <span class="at">FUN =</span> data.table<span class="sc">::</span>fwrite,</span>
+<span id="cb1-14"><a href="#cb1-14"></a>  <span class="co"># Les options de fread sont ici</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>  <span class="at">sep =</span> <span class="st">" ;"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16"></a>  <span class="at">col.names =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb1-17"><a href="#cb1-17"></a>  <span class="at">object =</span> <span class="st">"data/filosofi2016_example.csv"</span>,</span>
+<span id="cb1-18"><a href="#cb1-18"></a>  <span class="at">bucket =</span> <span class="st">"MON_BUCKET_A_REMPLACER"</span>,</span>
+<span id="cb1-19"><a href="#cb1-19"></a>  <span class="at">opts =</span> <span class="fu">list</span>(<span class="st">"region"</span> <span class="ot">=</span> <span class="st">""</span>)</span>
+<span id="cb1-20"><a href="#cb1-20"></a>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>
+Exemples additionnels liés au Funathon
+</summary>
+</details>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>bucket <span class="ot">&lt;-</span> <span class="st">"donnees-funathon"</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>aws.s3<span class="sc">::</span><span class="fu">get_bucket</span>(bucket, <span class="at">region =</span> <span class="st">""</span>, <span class="at">prefix =</span> <span class="st">"2023/sujet2/diffusion"</span>)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section></section>
+<section>
+<section id="illustration-par-la-pratique-avec-jupyter" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Illustration par la pratique avec <code>Jupyter</code> 🚀</h1>
 
 </section>
 <section id="démonstration-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Démonstration 🚀</h2>
-<ul>
-<li>https://datalab.sspcloud.fr/</li>
-<li>https://www.sspcloud.fr/formation</li>
-</ul>
+<p>Exemple à partir du <a href="https://github.com/InseeFrLab/funathon2023_sujet4">sujet 4</a></p>
+
+<img data-src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python.png" class="r-stretch quarto-figure-center"></section>
+<section id="aide-mémoire-s3-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Aide-mémoire <code>S3</code></h2>
+<p>Voir <a href="https://pythonds.linogaliana.fr/reads3/" class="uri">https://pythonds.linogaliana.fr/reads3/</a></p>
+</section>
+<section id="git" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><code>Git</code></h2>
+<p>Voir <a href="https://pythonds.linogaliana.fr/exogit/" class="uri">https://pythonds.linogaliana.fr/exogit/</a></p>
 </section>
 <section id="questions" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Questions</h2>

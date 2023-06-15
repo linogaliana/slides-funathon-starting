@@ -130,14 +130,70 @@
     "href": "light.html#lancer-un-service-prêt-à-lemploi",
     "title": "Présentation du SSP Cloud",
     "section": "Lancer un service prêt-à-l’emploi",
-    "text": "Lancer un service prêt-à-l’emploi\n\nNotebook standardisé accessible en un lien cliquable\n\n\n      \n\n\n\nDisponible aussi sur un portail de formation dédié sur sspcloud.fr/formation"
+    "text": "Lancer un service prêt-à-l’emploi\n\nUn exemple avec R (Explorer la géographie des cultures agricoles françaises)\n\n\n\n\n\n\n\nUn exemple avec Python (Mon Yuka avec Python)"
+  },
+  {
+    "objectID": "light.html#pourquoi-faire-du-contrôle-de-version",
+    "href": "light.html#pourquoi-faire-du-contrôle-de-version",
+    "title": "Présentation du SSP Cloud",
+    "section": "Pourquoi faire du contrôle de version ?",
+    "text": "Pourquoi faire du contrôle de version ?\n\nConstruire et naviguer à travers l’historique de son projet\n\n\n\nLa collaboration rendue simple et efficace\n\n\n\n\nAméliorer la reproductibilité de ses projets\n\n\n\n\nAméliorer la visibilité de ses projets\n\n\n\n\n\n\n\nNote\n\n\nPlus d’éléments dans la formation officielle"
+  },
+  {
+    "objectID": "light.html#gymnastique",
+    "href": "light.html#gymnastique",
+    "title": "Présentation du SSP Cloud",
+    "section": "Gymnastique",
+    "text": "Gymnastique\n\n\n\n\n\n\nPar défaut, le dépôt distant porte l’alias origin"
+  },
+  {
+    "objectID": "light.html#ressources-supplémentaires",
+    "href": "light.html#ressources-supplémentaires",
+    "title": "Présentation du SSP Cloud",
+    "section": "Ressources supplémentaires",
+    "text": "Ressources supplémentaires\n\nPour aller plus loin:\n\nFormation aux bonnes pratiques avec Git et R\nIntroduction à Git pour Python\nLa documentation utilitR propose plusieurs chapitres sur Git\nLa Bible de l’usage de Git"
+  },
+  {
+    "objectID": "light.html#objectif",
+    "href": "light.html#objectif",
+    "title": "Présentation du SSP Cloud",
+    "section": "Objectif",
+    "text": "Objectif\n\nDécouvrir S3\nDécouvrir Git à travers l’interface RStudio\nDécouvrir l’interaction entre Git, RStudio et Gitlab\nSe familiariser avec quelques concepts de Git\n\n\n\nMéthode préconisée pour Git:\n\nOn propose de travailler sur la même branche…\n… mais des fichiers séparés.\nEvite l’utilisation de branches tout en limitant les conflits.\n\n\n\n\n\nTrouver de l’aide:\n\nPour toute question : le salon Tchap Insee-Git-Gitlab\nA l’Insee : la documentation utilisateurs pour l’utilisation de Git sur AUS\nSollicitez vos collègues utilisateurs de Git !"
+  },
+  {
+    "objectID": "light.html#démonstration",
+    "href": "light.html#démonstration",
+    "title": "Présentation du SSP Cloud",
+    "section": "Démonstration 🚀",
+    "text": "Démonstration 🚀\nExemple à partir du sujet 2"
+  },
+  {
+    "objectID": "light.html#aide-mémoire-s3",
+    "href": "light.html#aide-mémoire-s3",
+    "title": "Présentation du SSP Cloud",
+    "section": "Aide-mémoire S3",
+    "text": "Aide-mémoire S3\n\n\nExemples issus d’utilitR\n\n\nbucket &lt;- \"donnees-insee\"\naws.s3::get_bucket(bucket, region = \"\")\ndf &lt;- \n  aws.s3::s3read_using(\n    FUN = data.table::fread,\n    # Mettre les options de FUN ici\n    object = \"diffusion/FILOSOFI/2016/FILOSOFI_COM.csv\",\n    bucket = \"donnees-insee\",\n    opts = list(\"region\" = \"\")\n  )\naws.s3::s3write_using(\n  df,\n  FUN = data.table::fwrite,\n  # Les options de fread sont ici\n  sep = \" ;\",\n  col.names = TRUE,\n  object = \"data/filosofi2016_example.csv\",\n  bucket = \"MON_BUCKET_A_REMPLACER\",\n  opts = list(\"region\" = \"\")\n)\n\n\nExemples additionnels liés au Funathon\n\n\nbucket &lt;- \"donnees-funathon\"\naws.s3::get_bucket(bucket, region = \"\", prefix = \"2023/sujet2/diffusion\")"
   },
   {
     "objectID": "light.html#démonstration-1",
     "href": "light.html#démonstration-1",
     "title": "Présentation du SSP Cloud",
     "section": "Démonstration 🚀",
-    "text": "Démonstration 🚀\n\nhttps://datalab.sspcloud.fr/\nhttps://www.sspcloud.fr/formation"
+    "text": "Démonstration 🚀\nExemple à partir du sujet 4"
+  },
+  {
+    "objectID": "light.html#aide-mémoire-s3-1",
+    "href": "light.html#aide-mémoire-s3-1",
+    "title": "Présentation du SSP Cloud",
+    "section": "Aide-mémoire S3",
+    "text": "Aide-mémoire S3\nVoir https://pythonds.linogaliana.fr/reads3/"
+  },
+  {
+    "objectID": "light.html#git",
+    "href": "light.html#git",
+    "title": "Présentation du SSP Cloud",
+    "section": "Git",
+    "text": "Git\nVoir https://pythonds.linogaliana.fr/exogit/"
   },
   {
     "objectID": "light.html#questions",
