@@ -280,7 +280,7 @@ Plus d'éléments dans la [formation officielle](https://inseefrlab.github.io/fo
 
 # Illustration par la pratique avec `RStudio` 🚀
 
-## Objectif
+## Objectif {.smaller}
 
 - Découvrir `S3`
 - Découvrir `Git` à travers l'interface `RStudio`
@@ -307,7 +307,6 @@ Plus d'éléments dans la [formation officielle](https://inseefrlab.github.io/fo
 ## Démonstration 🚀
 
 Exemple à partir du [sujet 2](https://github.com/InseeFrLab/funathon2023_sujet2)
-
 [![](https://img.shields.io/badge/Launch-Datalab-orange?logo=R)](https://datalab.sspcloud.fr/launcher/ide/rstudio?autoLaunch=false&onyxia.friendlyName=%C2%ABSujet%202%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Ffunathon2023_sujet2%2Fmain%2Finit.sh%C2%BB)
 
 ## Aide-mémoire `S3`
@@ -315,7 +314,6 @@ Exemple à partir du [sujet 2](https://github.com/InseeFrLab/funathon2023_sujet2
 <details>
 <summary>Exemples issus d'[utilitR](https://www.book.utilitr.org/01_r_insee/fiche_utiliser_rstudio_sspcloud#liens-utiles)
 </summary>
-</details>
 
 ```r
 bucket <- "donnees-insee"
@@ -339,16 +337,17 @@ aws.s3::s3write_using(
   opts = list("region" = "")
 )
 ```
+</details>
 
 <details>
 <summary>Exemples additionnels liés au Funathon
 </summary>
-</details>
 
 ```r
 bucket <- "donnees-funathon"
 aws.s3::get_bucket(bucket, region = "", prefix = "2023/sujet2/diffusion")
 ```
+</details>
 
 
 
@@ -357,7 +356,6 @@ aws.s3::get_bucket(bucket, region = "", prefix = "2023/sujet2/diffusion")
 ## Démonstration 🚀
 
 Exemple à partir du [sujet 4](https://github.com/InseeFrLab/funathon2023_sujet4)
-
 [![](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&color=yellow?logo=Python)](https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&kubernetes.role=%C2%ABadmin%C2%BB&networking.user.enabled=true&git.cache=%C2%AB36000%C2%BB&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Ffunathon2023_sujet4%2Fmain%2Finit.sh%C2%BB)
 
 
