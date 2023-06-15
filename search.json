@@ -21,6 +21,20 @@
     "text": "En plus, le SSP Cloud, c’est wahou ! 😍\n\nhttps://datalab.sspcloud.fr"
   },
   {
+    "objectID": "light.html#une-plateforme-pour-la-reproductibilité-et-la-liberté",
+    "href": "light.html#une-plateforme-pour-la-reproductibilité-et-la-liberté",
+    "title": "Présentation du SSP Cloud",
+    "section": "Une plateforme pour la reproductibilité et la liberté",
+    "text": "Une plateforme pour la reproductibilité et la liberté\n\nVous passez un contrat avec le SSP Cloud pour créer un RStudio ou Jupyter\n\nCelui-ci tourne sur des serveurs distants auxquels vous accédez via le navigateur\n\n\n\n\nEnvironnement initialement standardisé :\n\nTout le monde part du même socle minimal\nLiberté d’installer des packages ou librairies Linux"
+  },
+  {
+    "objectID": "light.html#une-plateforme-pour-les-bonnes-pratiques",
+    "href": "light.html#une-plateforme-pour-les-bonnes-pratiques",
+    "title": "Présentation du SSP Cloud",
+    "section": "Une plateforme pour les bonnes pratiques",
+    "text": "Une plateforme pour les bonnes pratiques\n\n\nDans un environnement différent\n\n\nSource: https://ensae-reproductibilite.github.io\n\n\nEnvironnements temporaires donc:\n\nStocker le code dans un endroit pérenne: Github, Gitlab\nStocker les données dans un endroit pérenne: MinIO\n\n\n\n\nDans le cadre du Funathon\n\n\n\n\n\nPour ceux voulant aller (vraiment) plus loin\n\n\nSource: https://ensae-reproductibilite.github.io\n\n\n\n\n\n\n\nNote\n\n\nLes services durent plusieurs jours mais n’ont pas vocation à persister"
+  },
+  {
     "objectID": "light.html#des-services-standardisés-pour-les-gouverner-tous",
     "href": "light.html#des-services-standardisés-pour-les-gouverner-tous",
     "title": "Présentation du SSP Cloud",
@@ -28,15 +42,8 @@
     "text": "Des services standardisés pour les gouverner tous"
   },
   {
-    "objectID": "light.html#la-logique-des-services-préconfigurés",
-    "href": "light.html#la-logique-des-services-préconfigurés",
-    "title": "Présentation du SSP Cloud",
-    "section": "La logique: des services préconfigurés",
-    "text": "La logique: des services préconfigurés\n\nEnvironnement standardisé pour la reproductibilité\nLiberté d’installer des packages"
-  },
-  {
-    "objectID": "light.html#onboarding",
-    "href": "light.html#onboarding",
+    "objectID": "light.html#onboarding-1",
+    "href": "light.html#onboarding-1",
     "title": "Présentation du SSP Cloud",
     "section": "Onboarding",
     "text": "Onboarding\n\nCréer un compte\nSe connecter\nTrouver de l’aide\nLancer un service de data science\nUtiliser git\nUtiliser le stockage objet MinIO"
