@@ -1,6 +1,6 @@
 # Présentation du `SSPCloud` et de `Git`
 
-https://linogaliana.github.io/slides-gt-notebook/
+https://linogaliana.github.io/slides-funathon-starting/light.html
 
 
 ## Objectif
@@ -67,3 +67,4 @@ On va donc récupérer en local les dernières modifications
 - Appuyer sur la fleche bleue (`pull`) pour récupérer les modifications
 - Tenter à nouveau le `push` (flèche verte)
 - Refaire ça si vous êtes plus de deux
+
